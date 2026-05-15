@@ -3,5 +3,9 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  base: '/skimm3rz-landing/'
+  base: '/skimm3rz-landing/',
+  build: {
+    outDir: 'dist',
+    emptyOutDir: true
+  }
 })
